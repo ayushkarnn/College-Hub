@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="app.tutorbyte.fragments.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotFragment"
+            app:destination="@id/forgotFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment2"
+            app:destination="@id/mainFragment2" />
+        <action
+            android:id="@+id/action_loginFragment_to_profileCompletionFragment"
+            app:destination="@id/profileCompletionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="app.tutorbyte.fragments.auth.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_registerFragment_to_mainFragment2"
+            app:destination="@id/mainFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="app.tutorbyte.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_androidListFragment"
+            app:destination="@id/androidListFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_webdFragment"
+            app:destination="@id/webdFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_aiMlFragment"
+            app:destination="@id/aiMlFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_dbmsFragment"
+            app:destination="@id/dbmsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_cyberSFragment"
+            app:destination="@id/cyberSFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_CNFragment"
+            app:destination="@id/CNFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_osFragment"
+            app:destination="@id/osFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_othersFragment"
+            app:destination="@id/othersFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_contentSubmitFragment"
+            app:destination="@id/contentSubmitFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="app.tutorbyte.fragments.dsa.ListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_listFragment_to_notesFragment"
+            app:destination="@id/notesFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_cheatdsFragment"
+            app:destination="@id/cheatdsFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_questiondsFragment"
+            app:destination="@id/questiondsFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_dsOthersFragment"
+            app:destination="@id/dsOthersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notesFragment"
+        android:name="app.tutorbyte.fragments.dsa.NotesFragment"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_notesFragment_to_striverFragment"
+            app:destination="@id/striverFragment" />
+        <action
+            android:id="@+id/action_notesFragment_to_otherFragment"
+            app:destination="@id/otherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/androidListFragment"
+        android:name="app.tutorbyte.fragments.android.AndroidListFragment"
+        android:label="fragment_android_list"
+        tools:layout="@layout/fragment_android_list" >
+        <action
+            android:id="@+id/action_androidListFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+        <action
+            android:id="@+id/action_androidListFragment_to_androidBookFragment"
+            app:destination="@id/androidBookFragment" />
+        <action
+            android:id="@+id/action_androidListFragment_to_cheatanFragment"
+            app:destination="@id/cheatanFragment" />
+        <action
+            android:id="@+id/action_androidListFragment_to_notesanFragment"
+            app:destination="@id/notesanFragment" />
+        <action
+            android:id="@+id/action_androidListFragment_to_otheranFragment"
+            app:destination="@id/otheranFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/webdFragment"
+        android:name="app.tutorbyte.fragments.webd.WebdFragment"
+        android:label="fragment_webd"
+        tools:layout="@layout/fragment_webd" >
+        <action
+            android:id="@+id/action_webdFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+        <action
+            android:id="@+id/action_webdFragment_to_noteswebdFragment"
+            app:destination="@id/noteswebdFragment" />
+        <action
+            android:id="@+id/action_webdFragment_to_cheatWebdFragment"
+            app:destination="@id/cheatWebdFragment" />
+        <action
+            android:id="@+id/action_webdFragment_to_questionwebFragment"
+            app:destination="@id/questionwebFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aiMlFragment"
+        android:name="app.tutorbyte.fragments.aiml.AiMlFragment"
+        android:label="fragment_ai_ml"
+        tools:layout="@layout/fragment_ai_ml" >
+        <action
+            android:id="@+id/action_aiMlFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+        <action
+            android:id="@+id/action_aiMlFragment_to_aiMlNotesFragment"
+            app:destination="@id/aiMlNotesFragment" />
+        <action
+            android:id="@+id/action_aiMlFragment_to_aimlCheatFragment"
+            app:destination="@id/aimlCheatFragment" />
+        <action
+            android:id="@+id/action_aiMlFragment_to_aimlOtherFragment"
+            app:destination="@id/aimlOtherFragment" />
+        <action
+            android:id="@+id/action_aiMlFragment_to_questFragment"
+            app:destination="@id/questFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dbmsFragment"
+        android:name="app.tutorbyte.fragments.dbms.DbmsFragment"
+        android:label="fragment_dbms"
+        tools:layout="@layout/fragment_dbms" >
+        <action
+            android:id="@+id/action_dbmsFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+        <action
+            android:id="@+id/action_dbmsFragment_to_notesDbmsFragment"
+            app:destination="@id/notesDbmsFragment" />
+        <action
+            android:id="@+id/action_dbmsFragment_to_cheatDbmsFragment"
+            app:destination="@id/cheatDbmsFragment" />
+        <action
+            android:id="@+id/action_dbmsFragment_to_questionDbmsFragment"
+            app:destination="@id/questionDbmsFragment" />
+        <action
+            android:id="@+id/action_dbmsFragment_to_otherDbmsFragment"
+            app:destination="@id/otherDbmsFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/cyberSFragment"
+        android:name="app.tutorbyte.fragments.cybers.CyberSFragment"
+        android:label="fragment_cyber_s"
+        tools:layout="@layout/fragment_cyber_s" >
+        <action
+            android:id="@+id/action_cyberSFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/CNFragment"
+        android:name="app.tutorbyte.fragments.cn.CNFragment"
+        android:label="fragment_c_n"
+        tools:layout="@layout/fragment_c_n" >
+        <action
+            android:id="@+id/action_CNFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/osFragment"
+        android:name="app.tutorbyte.fragments.os.OsFragment"
+        android:label="fragment_os"
+        tools:layout="@layout/fragment_os" >
+        <action
+            android:id="@+id/action_osFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/othersFragment"
+        android:name="app.tutorbyte.fragments.others.OthersFragment"
+        android:label="fragment_others"
+        tools:layout="@layout/fragment_others" >
+        <action
+            android:id="@+id/action_othersFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotFragment"
+        android:name="app.tutorbyte.fragments.auth.ForgotFragment"
+        android:label="fragment_forgot"
+        tools:layout="@layout/fragment_forgot" />
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="app.tutorbyte.fragments.ReportFragment"
+        android:label="fragment_report"
+        tools:layout="@layout/fragment_report" />
+
+    <fragment
+        android:id="@+id/contentSubmitFragment"
+        android:name="app.tutorbyte.fragments.ContentSubmitFragment"
+        android:label="fragment_content_submit"
+        tools:layout="@layout/fragment_content_submit" />
+    <fragment
+        android:id="@+id/striverFragment"
+        android:name="app.tutorbyte.fragments.dsa.StriverFragment"
+        android:label="fragment_striver"
+        tools:layout="@layout/fragment_striver" />
+    <fragment
+        android:id="@+id/otherFragment"
+        android:name="app.tutorbyte.fragments.dsa.OtherFragment"
+        android:label="fragment_other"
+        tools:layout="@layout/fragment_other" />
+    <fragment
+        android:id="@+id/cheatdsFragment"
+        android:name="app.tutorbyte.fragments.dsa.CheatdsFragment"
+        android:label="fragment_cheatds"
+        tools:layout="@layout/fragment_cheatds" />
+    <fragment
+        android:id="@+id/questiondsFragment"
+        android:name="app.tutorbyte.fragments.dsa.QuestiondsFragment"
+        android:label="fragment_questionds"
+        tools:layout="@layout/fragment_questionds" >
+        <action
+            android:id="@+id/action_questiondsFragment_to_dsLeetCodeFragment"
+            app:destination="@id/dsLeetCodeFragment" />
+        <action
+            android:id="@+id/action_questiondsFragment_to_leetcodeotherFragment2"
+            app:destination="@id/leetcodeotherFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/androidBookFragment"
+        android:name="app.tutorbyte.fragments.android.AndroidBookFragment"
+        android:label="fragment_android_book"
+        tools:layout="@layout/fragment_android_book" />
+    <fragment
+        android:id="@+id/dsLeetCodeFragment"
+        android:name="app.tutorbyte.fragments.dsa.DsLeetCodeFragment"
+        android:label="DsLeetCodeFragment" />
+    <fragment
+        android:id="@+id/cheatanFragment"
+        android:name="app.tutorbyte.fragments.android.CheatanFragment"
+        android:label="fragment_cheatan"
+        tools:layout="@layout/fragment_cheatan" />
+    <fragment
+        android:id="@+id/notesanFragment"
+        android:name="app.tutorbyte.fragments.android.NotesanFragment"
+        android:label="fragment_notesan"
+        tools:layout="@layout/fragment_notesan" />
+    <fragment
+        android:id="@+id/otheranFragment"
+        android:name="app.tutorbyte.fragments.android.OtheranFragment"
+        android:label="fragment_otheran"
+        tools:layout="@layout/fragment_otheran" />
+    <fragment
+        android:id="@+id/noteswebdFragment"
+        android:name="app.tutorbyte.fragments.webd.NoteswebdFragment"
+        android:label="fragment_noteswebd"
+        tools:layout="@layout/fragment_noteswebd" />
+    <fragment
+        android:id="@+id/cheatWebdFragment"
+        android:name="app.tutorbyte.fragments.webd.CheatWebdFragment"
+        android:label="fragment_cheat_webd"
+        tools:layout="@layout/fragment_cheat_webd" />
+    <fragment
+        android:id="@+id/questionwebFragment"
+        android:name="app.tutorbyte.fragments.webd.QuestionwebFragment"
+        android:label="fragment_questionweb"
+        tools:layout="@layout/fragment_questionweb" >
+        <action
+            android:id="@+id/action_questionwebFragment_to_interviewWebdFragment"
+            app:destination="@id/interviewWebdFragment" />
+        <action
+            android:id="@+id/action_questionwebFragment_to_otherqWebdFragmentFragment"
+            app:destination="@id/otherqWebdFragmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/interviewWebdFragment"
+        android:name="app.tutorbyte.fragments.webd.InterviewWebdFragment"
+        android:label="fragment_interview_webd"
+        tools:layout="@layout/fragment_interview_webd" />
+    <fragment
+        android:id="@+id/otherqWebdFragmentFragment"
+        android:name="app.tutorbyte.fragments.webd.otherqWebdFragment"
+        android:label="fragment_otherq_webd_fragment"
+        tools:layout="@layout/fragment_otherq_webd_fragment" />
+    <fragment
+        android:id="@+id/leetcodeotherFragment2"
+        android:name="app.tutorbyte.fragments.dsa.LeetcodeotherFragment"
+        android:label="LeetcodeotherFragment" />
+    <fragment
+        android:id="@+id/dsOthersFragment"
+        android:name="app.tutorbyte.fragments.dsa.DsOthersFragment"
+        android:label="fragment_ds_others"
+        tools:layout="@layout/fragment_ds_others" >
+        <action
+            android:id="@+id/action_dsOthersFragment_to_yt_DsFragment"
+            app:destination="@id/yt_DsFragment" />
+        <action
+            android:id="@+id/action_dsOthersFragment_to_dsaSheetsFragment"
+            app:destination="@id/dsaSheetsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yt_DsFragment"
+        android:name="app.tutorbyte.fragments.dsa.Yt_DsFragment"
+        android:label="fragment_yt__ds"
+        tools:layout="@layout/fragment_yt__ds" />
+    <fragment
+        android:id="@+id/dsaSheetsFragment"
+        android:name="app.tutorbyte.fragments.dsa.DsaSheetsFragment"
+        android:label="fragment_dsa_sheets"
+        tools:layout="@layout/fragment_dsa_sheets" />
+    <fragment
+        android:id="@+id/aiMlNotesFragment"
+        android:name="app.tutorbyte.fragments.aiml.AiMlNotesFragment"
+        android:label="fragment_ai_ml_notes"
+        tools:layout="@layout/fragment_ai_ml_notes" />
+    <fragment
+        android:id="@+id/aimlCheatFragment"
+        android:name="app.tutorbyte.fragments.aiml.AimlCheatFragment"
+        android:label="fragment_aiml_cheat"
+        tools:layout="@layout/fragment_aiml_cheat" />
+    <fragment
+        android:id="@+id/aimlOtherFragment"
+        android:name="app.tutorbyte.fragments.aiml.AimlOtherFragment"
+        android:label="fragment_aiml_other"
+        tools:layout="@layout/fragment_aiml_other" >
+        <action
+            android:id="@+id/action_aimlOtherFragment_to_projectsAimlFragment"
+            app:destination="@id/projectsAimlFragment" />
+        <action
+            android:id="@+id/action_aimlOtherFragment_to_moreAimlFragment"
+            app:destination="@id/moreAimlFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/projectsAimlFragment"
+        android:name="app.tutorbyte.fragments.aiml.ProjectsAimlFragment"
+        android:label="fragment_projects_aiml"
+        tools:layout="@layout/fragment_projects_aiml" />
+    <fragment
+        android:id="@+id/moreAimlFragment"
+        android:name="app.tutorbyte.fragments.aiml.MoreAimlFragment"
+        android:label="fragment_more_aiml"
+        tools:layout="@layout/fragment_more_aiml" />
+    <fragment
+        android:id="@+id/questFragment"
+        android:name="app.tutorbyte.fragments.aiml.QuestFragment"
+        android:label="fragment_quest"
+        tools:layout="@layout/fragment_quest" />
+    <fragment
+        android:id="@+id/jobFragment"
+        android:name="app.tutorbyte.fragments.jobupdt.JobFragment"
+        android:label="fragment_job"
+        tools:layout="@layout/fragment_job" />
+    <fragment
+        android:id="@+id/notesDbmsFragment"
+        android:name="app.tutorbyte.fragments.dbms.NotesDbmsFragment"
+        android:label="fragment_notes_dbms"
+        tools:layout="@layout/fragment_notes_dbms" />
+    <fragment
+        android:id="@+id/cheatDbmsFragment"
+        android:name="app.tutorbyte.fragments.dbms.CheatDbmsFragment"
+        android:label="fragment_cheat_dbms"
+        tools:layout="@layout/fragment_cheat_dbms" />
+    <fragment
+        android:id="@+id/questionDbmsFragment"
+        android:name="app.tutorbyte.fragments.dbms.QuestionDbmsFragment"
+        android:label="fragment_question_dbms"
+        tools:layout="@layout/fragment_question_dbms" />
+    <fragment
+        android:id="@+id/otherDbmsFragment"
+        android:name="app.tutorbyte.fragments.dbms.OtherDbmsFragment"
+        android:label="fragment_other_dbms"
+        tools:layout="@layout/fragment_other_dbms" />
+    <fragment
+        android:id="@+id/mainFragment2"
+        android:name="app.tutorbyte.MainFragment2"
+        android:label="MainFragment2" >
+        <action
+            android:id="@+id/action_mainFragment2_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_mainFragment2_to_jobFragment"
+            app:destination="@id/jobFragment" />
+        <action
+            android:id="@+id/action_mainFragment2_to_teacherSchedule"
+            app:destination="@id/teacherSchedule" />
+        <action
+            android:id="@+id/action_mainFragment2_to_cyberSecurityComm"
+            app:destination="@id/cyberSecurityComm" />
+        <action
+            android:id="@+id/action_mainFragment2_to_aiMlComm"
+            app:destination="@id/aiMlComm" />
+        <action
+            android:id="@+id/action_mainFragment2_to_webDevelopmentFragment"
+            app:destination="@id/webDevelopmentFragment" />
+        <action
+            android:id="@+id/action_mainFragment2_to_androidDevelopmentComm3"
+            app:destination="@id/androidDevelopmentComm" />
+        <action
+            android:id="@+id/action_mainFragment2_to_messMenuFragment"
+            app:destination="@id/messMenuFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/teacherSchedule"
+        android:name="app.tutorbyte.TeacherSchedule"
+        android:label="TeacherSchedule" />
+    <fragment
+        android:id="@+id/profileCompletionFragment"
+        android:name="app.tutorbyte.ProfileCompletionFragment"
+        android:label="ProfileCompletionFragment" >
+        <action
+            android:id="@+id/action_profileCompletionFragment_to_mainFragment2"
+            app:destination="@id/mainFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/cyberSecurityComm"
+        android:name="app.tutorbyte.communities.CyberSecurityComm"
+        android:label="fragment_cyber_security_comm"
+        tools:layout="@layout/fragment_cyber_security_comm" />
+    <fragment
+        android:id="@+id/aiMlComm"
+        android:name="app.tutorbyte.communities.AiMlComm"
+        android:label="fragment_ai_ml_comm"
+        tools:layout="@layout/fragment_ai_ml_comm" />
+    <fragment
+        android:id="@+id/androidDevelopmentComm"
+        android:name="app.tutorbyte.communities.AndroidDevelopmentComm"
+        android:label="fragment_android_development_comm"
+        tools:layout="@layout/fragment_android_development_comm" />
+    <fragment
+        android:id="@+id/webDevelopmentFragment"
+        android:name="app.tutorbyte.communities.WebDevelopmentFragment"
+        android:label="fragment_web_development"
+        tools:layout="@layout/fragment_web_development" />
+    <fragment
+        android:id="@+id/messMenuFragment"
+        android:name="app.tutorbyte.MessMenuFragment"
+        android:label="fragment_mess_menu"
+        tools:layout="@layout/fragment_mess_menu" />
+</navigation>

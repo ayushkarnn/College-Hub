@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imgmess"
+        android:layout_width="70dp"
+        android:layout_height="78dp"
+        android:src="@drawable/breakfast"
+        android:padding="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/topTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/imgmess"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
+        android:fontFamily="@font/segoe_ui_bold"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Breakfast"/>
+
+
+    <TextView
+        android:id="@+id/menuu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/topTv"
+        app:layout_constraintStart_toStartOf="@id/imgmess"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Chhole Bhature,Tea and Milk"
+        android:textColor="@color/black"
+        android:maxLines="2"
+        android:textStyle="bold"
+        android:fontFamily="@font/seg_ui_semibold"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

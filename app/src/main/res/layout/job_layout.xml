@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soup.neumorphism.NeumorphCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:neumorph_shapeType="basin"
+    app:neumorph_lightSource="rightBottom"
+    android:layout_margin="6dp"
+    android:layout_height="360dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp">
+
+
+            <TextView
+                android:id="@+id/postedDt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="12sp"
+                android:layout_gravity="end"
+                android:textColor="@color/black"
+                android:fontFamily="@font/segoe_ui_regular" />
+
+
+            <TextView
+                android:id="@+id/titleTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:layout_marginBottom="3dp" />
+
+            <TextView
+                android:id="@+id/descriptionTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/seg_ui_semibold"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/linkTV"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/blue_700"
+                android:fontFamily="@font/seg_ui_semibold"
+                android:text="Link" />
+        </LinearLayout>
+    </ScrollView>
+</soup.neumorphism.NeumorphCardView>

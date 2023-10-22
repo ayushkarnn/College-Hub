@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">College Hub</string>
+    <string name="hello_blank_fragment">Login fragment</string>
+    <string name="banner_lower"> <font color="#FFFFFFFF">Designed And Developed By </font> <font color="#0000FF">Ayush</font></string>
+
+</resources>
