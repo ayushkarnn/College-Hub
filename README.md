@@ -4,6 +4,10 @@
 
 Welcome to the College Hub Android app! This app is designed to enhance the college experience for both students and teachers. It provides various features to help students with their studies and campus life.
 
+## Video Explanation
+https://www.loom.com/share/3557a80a814d4badac182c34ffbe0d04?sid=01683408-d034-4adf-ad0f-44906e47ab59
+
+
 ## Features
 
 ### 1. Sign-In & Login Page
