@@ -43,26 +43,14 @@ https://www.loom.com/share/3557a80a814d4badac182c34ffbe0d04?sid=01683408-d034-4a
 
 To get started with the College Hub Android app, follow these steps:
 
-1. Download the app from the Google Play Store.
+1. Download the app from the debug folder.
 2. Sign up for an account or log in if you already have one.
 3. Explore the app's various features, including Notes, Community, Teacher's Schedule, Mess Food Menu, and Lost and Found.
 
 ## Support and Feedback
 
-If you encounter any issues, have questions, or would like to provide feedback, please contact our support team at [support@example.com](mailto:support@example.com).
+If you encounter any issues, have questions, or would like to provide feedback, please contact our support team at [Mail](mailto:ayushkarnn@gmail.com).
 
-## Contributing
 
-We welcome contributions from the community. If you'd like to contribute to the app's development, please follow our [contribution guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-We would like to thank all our contributors and users for their valuable input and support in making the College Hub Android app a success.
-
----
 
 We hope you enjoy using the College Hub Android app and that it enhances your college experience. Thank you for choosing our app!
